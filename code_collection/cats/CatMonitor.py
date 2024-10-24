@@ -1,7 +1,5 @@
 # file: CatMonitor.py
 
-from Cat import Cat
-
 class CatMonitor:
 
     # create object
