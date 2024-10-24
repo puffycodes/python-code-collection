@@ -1,0 +1,16 @@
+# file: .gitignore
+
+# Juypter notebook
+.ipynb_checkpoints
+
+# Python Cache
+__pycache__
+
+# MacOS
+.DS_Store
+__MACOSX
+
+# Python Packaging
+dist
+
+# --- end of file --- #
