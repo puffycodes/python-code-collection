@@ -23,6 +23,7 @@ oldestCat = monitor.getOldestCat()
 # display the average age of the cats
 message = "Average age of cats is {:.1f} years old" # display flot to 1 decimal point
 print(message.format(averageAge))
+print()
 
 # display the attributes of the oldest cats
 print("Oldest cat is:")
@@ -35,6 +36,7 @@ catAge = input("Please enter new cat age: ")
 catAge = int(catAge)
 newCat = Cat(catId, catName, catAge)
 monitor.addCatRecord(newCat)
+print()
 
 # calculate and display the new average age
 averageAge = monitor.getAverageAge()
