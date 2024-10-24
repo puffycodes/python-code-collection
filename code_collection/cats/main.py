@@ -42,6 +42,7 @@ print()
 averageAge = monitor.getAverageAge()
 message = "New average age of cats is {:.1f} years old"
 print(message.format(averageAge))
+print()
 
 # ----------- code below are for testing purpose ---------- #
 
