@@ -27,7 +27,7 @@ class CatMonitor:
     
     # create function to calculate average age
     def getAverageAge(self):
-        average = sum(self.ageList)/len(self.ageList)
+        average = sum(self.ageList)/len(self.ageList) # average is total divides by count
         return average
     
     # create function to allow user to add a new record
