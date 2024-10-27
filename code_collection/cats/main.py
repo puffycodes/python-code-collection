@@ -21,7 +21,7 @@ averageAge = monitor.getAverageAge()
 oldestCat = monitor.getOldestCat()
 
 # display the average age of the cats
-message = "Average age of cats is {:.1f} years old" # display flot to 1 decimal point
+message = "Average age of cats is {:.1f} years old" # display float to 1 decimal point
 print(message.format(averageAge))
 print()
 
