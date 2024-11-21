@@ -2,9 +2,9 @@ import os
 
 #homeDir="C:/practice" #where the files are in the directory,
 
-# files must be placed in e.g. "C:/practice/samples"
+# files must be placed in e.g. "C:/practice/sample"
 workDir = os.getcwd()
-homeDir = os.path.join(workDir, "samples") # where the files are
+homeDir = os.path.join(workDir, "sample") # where the files are
 print("Working directory:", workDir)
 print("Home directory:", homeDir)
 print()
