@@ -1,6 +1,14 @@
 import os
 
-homeDir="C:/practice" #where the files are in the directory,
+#homeDir="C:/practice" #where the files are in the directory,
+
+# files must be placed in e.g. "C:/practice/samples"
+workDir = os.getcwd()
+homeDir = os.path.join(workDir, "samples") # where the files are
+print("Working directory:", workDir)
+print("Home directory:", homeDir)
+print()
+
 totalSize= 0
 numberTextFile = 0
 print("List of text files:")
