@@ -10,12 +10,13 @@ top_folder = os.getcwd()
 resource_folder = os.path.join(top_folder, 'resource')
 
 log_file = os.path.join(resource_folder, 'log.txt')
+admin_script_log_file = os.path.join(top_folder, 'admin_script_log.txt')
 
 print(f'top folder: {top_folder}')
 print(f'log file: {log_file}')
 
 # define the logging file location
-logging.basicConfig(filename='admin_script_log.txt')
+logging.basicConfig(filename=admin_script_log_file)
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
