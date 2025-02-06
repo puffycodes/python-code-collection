@@ -31,21 +31,31 @@ print(f'hostname: {hostname}')
 
 # process the log file
 
+# open the log file for reading
 with open(log_file, 'r') as log_fd:
+
+    # process each line in the log file
     for line in log_fd:
         #print(line.strip())
+
+        # extract the filename and owner from the line
         filename, owner = line.strip().split(':')
         #print(filename, owner)
 
+        # check if the file exists
         current_file = os.path.join(resource_folder, filename)
         if os.path.isfile(current_file):
             print(current_file)
 
+            # extract the name and extension of the file
             name, ext = os.path.splitext(filename)
+            # construct the new name for the file
             new_name = f'{name}_{owner}{ext}'
             print(name, ext, '->', new_name)
 
+            # rename the file
             move_to_filename = os.path.join(resource_folder, new_name)
-
             os.rename(current_file, move_to_filename)
+
+            # log the action of renaming the file
             logger.info(f'renamed: {current_file} -> {move_to_filename}')
