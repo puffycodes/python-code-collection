@@ -17,9 +17,8 @@ print(f'log file: {log_file}')
 print(f'process log file: {admin_script_log_file}')
 
 # define the logging file location
-logging.basicConfig(filename=admin_script_log_file)
+logging.basicConfig(filename=admin_script_log_file, level=logging.INFO)
 logger = logging.getLogger()
-logger.setLevel(logging.INFO)
 
 # get the current date and time and hostname
 time_now = datetime.now()
