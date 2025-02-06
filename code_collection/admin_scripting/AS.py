@@ -14,6 +14,7 @@ admin_script_log_file = os.path.join(top_folder, 'admin_script_log.log')
 
 print(f'top folder: {top_folder}')
 print(f'log file: {log_file}')
+print(f'process log file: {admin_script_log_file}')
 
 # define the logging file location
 logging.basicConfig(filename=admin_script_log_file)
